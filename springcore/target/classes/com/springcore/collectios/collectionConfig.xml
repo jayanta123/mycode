@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:p="http://www.springframework.org/schema/p" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean name="emp" class="com.springcore.collectios.Emp">
+		<property name="name" value="Jayanta" />
+
+		<property name="phones" >
+			<list>
+				<value>123</value>
+				<value>2222</value>
+				<value>3333</value>
+			</list>
+		</property>
+		
+		<property name="addresses">
+			<set>
+				<value>Kolkata</value>
+				<value>Mumbai</value>
+				<value>Bangalore</value>
+			</set>
+		</property>
+		
+		<property name="courses">
+			<map>
+				<entry key="java" value="2 Months" />
+				<entry key="C" value="1 Months" />
+			</map>
+		</property>
+		
+		
+		
+	</bean>
+
+	<bean class="com.myspring.springcore.Student" name="student2" p:studentId="007" p:studentName="Banerjee" p:studentAddress="India" />
+	
+
+</beans>
